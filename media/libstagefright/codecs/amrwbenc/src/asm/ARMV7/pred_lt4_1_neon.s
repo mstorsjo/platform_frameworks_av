@@ -28,8 +28,8 @@
 
           .section  .text
           .global   pred_lt4_asm
-          .extern   inter4_2
-          .hidden   inter4_2
+          .extern   voAWB_inter4_2
+          .hidden   voAWB_inter4_2
 
 pred_lt4_asm:
 
@@ -97,7 +97,7 @@ pred_lt4_end:
           LDMFD   	r13!, {r4 - r12, r15}
 
 Lable1:
-          .word   	inter4_2-Lable1
+          .word   	voAWB_inter4_2-Lable1
           @ENDFUNC
           .END
 

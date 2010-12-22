@@ -27,8 +27,8 @@
 
           .section  .text
           .global   Filt_6k_7k_asm
-          .extern   fir_6k_7k
-          .hidden   fir_6k_7k
+          .extern   voAWB_fir_6k_7k
+          .hidden   voAWB_fir_6k_7k
 
 Filt_6k_7k_asm:
 
@@ -224,7 +224,7 @@ Filt_6k_7k_end:
           LDMFD   		r13!, {r0 - r12, r15}
 
 Lable1:
-          .word   		fir_6k_7k-Lable1
+          .word   		voAWB_fir_6k_7k-Lable1
           @ENDFUNC
           .END
 
